@@ -1,9 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Mengimport Bootstrap
 import './App.css'; // Mengimport File Css
-// import Header from './Component/Header'; // Mengimport Komponen Header
-// import Landing from './Component/Landing'; // Mengimport komponen Landing
 
+// Function Input untuk menerima nilai dari App
 function Input(props) {
     return (
         <div>
@@ -21,6 +20,7 @@ function Input(props) {
 function App() {
     return (
         <>
+        {/* Memanggil Function Input */}
             <Input name="Farida" job="Programmer" />
             <Input name="Dini" job="Doctor" />
             <Input name="Tiara" job="Casir" />
