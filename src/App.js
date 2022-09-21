@@ -1,7 +1,5 @@
 import React from 'react';
 import { faker } from '@faker-js/faker';
-// import 'bootstrap/dist/css/bootstrap.min.css'; // Mengimport Bootstrap
-// import './App.css'; // Mengimport File Css
 
 function Comment(props) {
     return (
@@ -24,12 +22,32 @@ function Comment(props) {
     );
 }
 
+const data =  [
+        {
+            name: "Farida",
+            date: "Today at 08:00PM",
+            content: "Why React JS?"
+        },
+        {
+            name: "Fadilah",
+            date: "Today at 09:00PM",
+            content: "React JS for Front-End is good!"
+        },
+        {
+            name: "Dini",
+            date: "Today at 10:00PM",
+            content: "Nice"
+        },
+    ];
+
 function App() {
     return (
         <>
-            <Comment name="Farida" date="Today at 08:00PM" content="Why React JS?" />
-            <Comment name="Fadilah" date="Today at 09:00PM" content="React JS for Front-End is good!" />
-            <Comment name="Tiara" date="Today at 10:00PM" content="Nice" />
+            {data.map((e)=>{
+                return (
+                <Comment name={e.name} date={e.date} content={e.content}/>
+                );
+            })}
         </>
     );
 }
