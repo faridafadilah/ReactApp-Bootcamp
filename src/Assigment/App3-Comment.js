@@ -7,7 +7,7 @@ function Comment(props) {
        <div className='ui container comments'>
         <div className='comment'>
             <a href='/' className='avatar'>
-                <img alt='avatar' src={faker.image.avatar()} />
+                <img alt='avatar' src={props.image} />
             </a>
             <div className='content'>
                 <a href='/' className='author'>
@@ -27,9 +27,9 @@ function Comment(props) {
 function App() {
     return (
         <>
-            <Comment name="Farida" date="Today at 08:00PM" content="Why React JS?" />
-            <Comment name="Fadilah" date="Today at 09:00PM" content="React JS for Front-End is good!" />
-            <Comment name="Tiara" date="Today at 10:00PM" content="Nice" />
+            <Comment image={faker.image.avatar()} name="Farida" date="Today at 08:00PM" content="Why React JS?" />
+            <Comment image={faker.image.avatar()} name="Fadilah" date="Today at 09:00PM" content="React JS for Front-End is good!" />
+            <Comment image={faker.image.avatar()} name="Tiara" date="Today at 10:00PM" content="Nice" />
         </>
     );
 }
