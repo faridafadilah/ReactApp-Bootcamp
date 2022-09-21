@@ -1,12 +1,13 @@
 import React from 'react';
-import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker'; // Mengimport faker untuk image random
 
+// Komponen Comment untuk Tampilan Comment menggunakan Semantic UI
 function Comment(props) {
     return (
        <div className='ui container comments'>
         <div className='comment'>
             <a href='/' className='avatar'>
-                <img alt='avatar' src={faker.image.avatar()} />
+                <img alt='avatar' src={props.image} />
             </a>
             <div className='content'>
                 <a href='/' className='author'>
@@ -22,18 +23,22 @@ function Comment(props) {
     );
 }
 
+// Data Array 
 const data =  [
         {
+            image: faker.image.avatar(),
             name: "Farida",
             date: "Today at 08:00PM",
             content: "Why React JS?"
         },
         {
+            image: faker.image.avatar(),
             name: "Fadilah",
             date: "Today at 09:00PM",
             content: "React JS for Front-End is good!"
         },
         {
+            image: faker.image.avatar(),
             name: "Dini",
             date: "Today at 10:00PM",
             content: "Nice"
@@ -43,9 +48,10 @@ const data =  [
 function App() {
     return (
         <>
+        {/* Looping data props */}
             {data.map((e)=>{
                 return (
-                <Comment name={e.name} date={e.date} content={e.content}/>
+                <Comment image={e.image} name={e.name} date={e.date} content={e.content}/>
                 );
             })}
         </>
