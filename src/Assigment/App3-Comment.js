@@ -1,8 +1,7 @@
 import React from 'react';
-import { faker } from '@faker-js/faker';
-// import 'bootstrap/dist/css/bootstrap.min.css'; // Mengimport Bootstrap
-// import './App.css'; // Mengimport File Css
+import { faker } from '@faker-js/faker'; // Import faker for image random
 
+// menggunakan Comment dengan Semantic UI
 function Comment(props) {
     return (
        <div className='ui container comments'>
@@ -24,6 +23,7 @@ function Comment(props) {
     );
 }
 
+// Pemanggilan Komponen
 function App() {
     return (
         <>
