@@ -13,7 +13,7 @@ class Comment extends React.Component {
       like: 0
     };
   }
-
+  // Function Mengubah data like
   handleLike = ()  => {
     this.setState({
       like: this.state.like + 1
