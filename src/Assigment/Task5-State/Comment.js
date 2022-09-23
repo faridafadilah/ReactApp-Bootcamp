@@ -2,6 +2,7 @@ import React from "react";
 
 // Membuat Comment Menggunakan CLass
 class Comment extends React.Component {
+  // Menggunakan State dan setState untuk Button Like
   constructor({image, name, date, content}) {
     super();
     this.state = {
@@ -32,12 +33,12 @@ class Comment extends React.Component {
               </a>
               <div className="metadata">
                 <span className="date">{this.state.date}</span>
-                <div className="rating">
+                {/* Menampilkan Angka Like */}
                   <i className="heart icon"></i>
                   {this.state.like}
-                </div>
               </div>
               <div className="text">{this.state.content}</div>
+              {/* Membuat Button Like */}
               <button onClick={this.handleLike}><i className="heart icon"></i>Like</button>
             </div>
           </div>

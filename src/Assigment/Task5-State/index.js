@@ -8,6 +8,7 @@ import dataArray from './Component/data';
 // Merender Komponent APP Untuk ditampilkan di Id root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // Memasukan dataArray ke Komponen App
   <React.StrictMode>
     <App dataArray={dataArray}/>
   </React.StrictMode>
