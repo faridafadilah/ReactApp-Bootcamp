@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import dataArray from './Component/data';
 
 // Merender Komponent APP Untuk ditampilkan di Id root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App dataArray={dataArray}/>
+    <App />
   </React.StrictMode>
 );
 
