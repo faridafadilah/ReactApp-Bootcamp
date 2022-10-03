@@ -5,6 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        {/* Memanggil Komponen Hooks Time */}
         <HooksTime/>
       </div>
     );
