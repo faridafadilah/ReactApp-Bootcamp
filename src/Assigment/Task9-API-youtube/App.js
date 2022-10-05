@@ -6,7 +6,7 @@ import VideoDetail from "./Component/VideoDetail/VideoDetail";
 
 class App extends React.Component {
   state = {
-    videos: [],
+    videos: [], 
     selectedVideo: null,
   };
 
