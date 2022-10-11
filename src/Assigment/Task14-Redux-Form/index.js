@@ -11,7 +11,7 @@ const onSubmit = async values => {
   window.alert(JSON.stringify(values, 0, 2))
 }
 
-const App = () => (
+const Index = () => (
   <Styles>
     <h1>React Final Form - Simple Example</h1>
     <a
@@ -50,9 +50,9 @@ const App = () => (
           </div>
           <div>
             <label>Education</label>
-            <Field name="favoriteColor" component="select">
+            <Field name="education" component="select">
               <option value="#ff0000">Hight School</option>
-              <option value="#00ff00">Senior School</option>
+              <option value="#00ff00">Bachelor degree</option>
               <option value="#0000ff">Junior School</option>
             </Field>
           </div>
@@ -61,7 +61,7 @@ const App = () => (
             <div>
               <label>
                 <Field
-                  name="sauces"
+                  name="experience"
                   component="input"
                   type="checkbox"
                   value="HTML"
@@ -70,7 +70,7 @@ const App = () => (
               </label>
               <label>
                 <Field
-                  name="sauces"
+                  name="experience"
                   component="input"
                   type="checkbox"
                   value="CSS"
@@ -97,7 +97,7 @@ const App = () => (
               </label>
               <label>
                 <Field
-                  name="sauces"
+                  name="experience"
                   component="input"
                   type="checkbox"
                   value="React Js"
@@ -111,7 +111,7 @@ const App = () => (
             <div>
               <label>
                 <Field
-                  name="stooge"
+                  name="profesi"
                   component="input"
                   type="radio"
                   value="frontend"
@@ -120,7 +120,7 @@ const App = () => (
               </label>
               <label>
                 <Field
-                  name="stooge"
+                  name="profesi"
                   component="input"
                   type="radio"
                   value="backend"
@@ -129,7 +129,7 @@ const App = () => (
               </label>
               <label>
                 <Field
-                  name="stooge"
+                  name="profesi"
                   component="input"
                   type="radio"
                   value="fullstack"
@@ -160,5 +160,4 @@ const App = () => (
     />
   </Styles>
 )
-
-render(<App />, document.getElementById('root'))
+export default Index;

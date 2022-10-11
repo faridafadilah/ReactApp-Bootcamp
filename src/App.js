@@ -1,10 +1,10 @@
 import React from "react";
-import GetPosts from "./Component/GetPosts";
+import Index from "./Assigment/Task13-Redux-Thunk-Comment/index";
 
 function App() {
   return (
     <div>
-      <GetPosts />
+      <Index />
     </div>
   );
 }

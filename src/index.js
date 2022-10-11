@@ -4,24 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Pemanggilan Provider dan store yang sudah dibuat
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from "redux";
-import thunk from 'redux-thunk';
-import reducers from "./reduxAsync/reducer";
-
-const store = createStore(reducers, applyMiddleware(thunk));
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/* Membungkus Aplikasi dengan Provider dan memasukan store yang sudah dibuat */}
-    <Provider store={store}>
       <App />
-    </Provider>
   </React.StrictMode>
-);
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
