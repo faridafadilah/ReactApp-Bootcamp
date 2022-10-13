@@ -1,0 +1,18 @@
+{
+  "form": [
+    {
+      "stooge": "larry",
+      "employed": true,
+      "firstName": "Farida",
+      "lastName": "Fadilah",
+      "education": "#00ff00",
+      "experience": [
+        "CSS",
+        "HTML"
+      ],
+      "notes": "test",
+      "profesi": "fullstack",
+      "id": 1
+    }
+  ]
+}
