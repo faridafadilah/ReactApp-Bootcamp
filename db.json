@@ -1,17 +1,16 @@
 {
   "form": [
     {
-      "stooge": "larry",
-      "employed": true,
       "firstName": "Farida",
       "lastName": "Fadilah",
-      "education": "#00ff00",
+      "education": "Bachelor degree",
+      "employed": true,
       "experience": [
-        "CSS",
-        "HTML"
+        "Node Js",
+        "Javascript"
       ],
+      "profesi": "backend",
       "notes": "test",
-      "profesi": "fullstack",
       "id": 1
     }
   ]
